@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio osoby tworzącej projekty. Zawiera informacje o autorze oraz przykłady jego pracy.">
+    <title>Portfolio - Twoje Imię</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Witaj! Jestem [Twoje Imię]</h1>
+            <p>Jestem pasjonatem tworzenia stron internetowych i aplikacji. Zrealizowałem szereg projektów, które znajdziesz poniżej.</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>O mnie</h2>
+            <p>Cześć, nazywam się [Twoje Imię] i jestem frontend developerem z pasją do tworzenia funkcjonalnych i estetycznych stron internetowych. Moje doświadczenie obejmuje pracę z HTML, CSS, JavaScript oraz popularnymi frameworkami i bibliotekami. Poniżej znajdziesz przegląd niektórych moich projektów.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projekty</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Projekt 1</h3>
+                    <p>Opis projektu, czego dotyczył, jakich technologii użyłem, co udało się osiągnąć.</p>
+                    <button onclick="showDetails('projekt1')">Więcej informacji</button>
+                    <div class="project-details" id="projekt1">
+                        <p>Więcej szczegółów na temat projektu 1...</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Projekt 2</h3>
+                    <p>Opis projektu, czym się charakteryzował, jakie technologie wykorzystałem.</p>
+                    <button onclick="showDetails('projekt2')">Więcej informacji</button>
+                    <div class="project-details" id="projekt2">
+                        <p>Więcej szczegółów na temat projektu 2...</p>
+                    </div>
+                </div>
+                <!-- Możesz dodać więcej projektów w podobny sposób -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Kontakt: [Twój email]</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
