@@ -5,15 +5,17 @@
     --text: #24292f;
     --bg: #fff;
     --card: #f4f6fa;
+    --company: #1e3c72; /* kolor dla sekcji company */
 }
 
 [data-theme='dark'] {
     --primary: #1e3c72;
-    --secondary: #43639b;
+    --secondary: #232526;
     --accent: #232a34;
     --text: #f8fafc;
     --bg: #161b22;
     --card: #222731;
+    --company: #8ab4f8; /* jasny kolor dla company w dark */
 }
 
 html, body {
@@ -45,11 +47,13 @@ aside {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    box-sizing: border-box;
 }
 
 aside h1, aside h2 {
     margin: 0;
     text-align: center;
+    word-break: break-word;
 }
 
 .profile-img {
@@ -60,13 +64,6 @@ aside h1, aside h2 {
     border: 4px solid var(--accent);
     margin-bottom: 8px;
     max-width: 100%;
-}
-
-@media (max-width: 600px) {
-    .profile-img {
-        width: 100px;
-        height: 100px;
-    }
 }
 
 .contact {
@@ -115,7 +112,7 @@ h3 {
 
 .company {
     font-size: 1em;
-    color: var(--secondary);
+    color: var(--company);
 }
 
 .date {
@@ -174,7 +171,7 @@ form button:hover {
     background: var(--secondary);
 }
 
-#formResponse {
+#formResponse, #formResponsePL {
     margin-top: 8px;
     font-size: 1em;
 }
@@ -184,9 +181,11 @@ form button:hover {
     top: 18px;
     right: 26px;
     z-index: 10;
+    display: flex;
+    gap: 8px;
 }
 
-#toggleTheme {
+#toggleTheme, #toggleLang {
     background: var(--primary);
     color: #fff;
     border: none;
@@ -198,10 +197,11 @@ form button:hover {
     transition: background 0.2s;
 }
 
-#toggleTheme:hover {
+#toggleTheme:hover, #toggleLang:hover {
     background: var(--secondary);
 }
 
+/* TABLET/MOBILE - układ kolumnowy, aside i main pod sobą */
 @media (max-width: 900px) {
     .container {
         flex-direction: column;
@@ -222,5 +222,26 @@ form button:hover {
     }
     main {
         padding: 22px 10px;
+    }
+}
+
+/* NAJMNIEJSZE EKRANY - aside pionowo */
+@media (max-width: 600px) {
+    aside {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 8px;
+        gap: 12px;
+    }
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 8px;
+    }
+    aside h1, aside h2, aside p {
+        text-align: center;
+    }
+    .contact {
+        width: 100%;
     }
 }
