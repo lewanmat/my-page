@@ -5,7 +5,7 @@
     --text: #24292f;
     --bg: #fff;
     --card: #f4f6fa;
-    --company: #1e3c72; /* kolor dla sekcji company */
+    --company: #1e3c72;
 }
 
 [data-theme='dark'] {
@@ -15,7 +15,7 @@
     --text: #f8fafc;
     --bg: #161b22;
     --card: #222731;
-    --company: #8ab4f8; /* jasny kolor dla company w dark */
+    --company: #8ab4f8;
 }
 
 html, body {
@@ -234,8 +234,8 @@ form button:hover {
         gap: 12px;
     }
     .profile-img {
-        width: 100px;
-        height: 100px;
+        width: 210px;
+        height: 210px;
         margin-bottom: 8px;
     }
     aside h1, aside h2, aside p {
