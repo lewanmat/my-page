@@ -1,58 +1,134 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Mateusz Lewandowski - CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio osoby tworzącej projekty. Zawiera informacje o autorze oraz przykłady jego pracy.">
-    <title>Portfolio - Twoje Imię</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Witaj! Jestem [Twoje Imię]</h1>
-            <p>Jestem pasjonatem tworzenia stron internetowych i aplikacji. Zrealizowałem szereg projektów, które znajdziesz poniżej.</p>
-        </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>O mnie</h2>
-            <p>Cześć, nazywam się [Twoje Imię] i jestem frontend developerem z pasją do tworzenia funkcjonalnych i estetycznych stron internetowych. Moje doświadczenie obejmuje pracę z HTML, CSS, JavaScript oraz popularnymi frameworkami i bibliotekami. Poniżej znajdziesz przegląd niektórych moich projektów.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projekty</h2>
-            <div class="project-list">
-                <div class="project">
-                    <h3>Projekt 1</h3>
-                    <p>Opis projektu, czego dotyczył, jakich technologii użyłem, co udało się osiągnąć.</p>
-                    <button onclick="showDetails('projekt1')">Więcej informacji</button>
-                    <div class="project-details" id="projekt1">
-                        <p>Więcej szczegółów na temat projektu 1...</p>
-                    </div>
+    <div class="theme-toggle">
+        <button id="toggleTheme">🌓 Change theme</button>
+    </div>
+    <div class="container">
+        <aside>
+            <img src="img/20250424_163654_square.jpg" alt="Profile photo" class="profile-img">
+            <h1>Mateusz Lewandowski</h1>
+            <h2>Software Engineer / Test Engineer</h2>
+            <p>Experienced software engineer with a passion for embedded systems and testing in the Automotive industry.</p>
+            <ul class="contact">
+                <li><strong>Email:</strong> lewanmat@gmail.com</li>
+                <li><strong>Telefon:</strong> +48 723 456 760</li>
+                <li><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/mateusz-lewandowski-47b31a184</a></li>
+                <li><strong>GitHub:</strong> <a href="#">github.com/lewanmat</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section>
+                <h3>Executive Summary</h3>
+                <p>Experienced Embedded Systems Engineer with over 10 years of hands-on expertise in designing, developing and testing
+                    embedded software solutions. Skilled in low-level programming and hardware-software integration. Proven background in
+                    software testing and quality assurance, with a solid grasp of test automation and scripting in Python. Adept at working in cross
+                    functional teams, solving complex technical problems and delivering reliable, high-performance solutions in demanding
+                    environments. Passionate about embedded technologies and continuous learning. Enthusiast of Raspberry Pi Pico and
+                    Micropython with a strong interest of rapid prototyping and educational tech.</p>
+            </section>
+            <section>
+                <h3> Professional Experience</h3>
+                <div class="job">
+                    <h4>Software Test Engineer</h4>
+                    <p class="company">Globallogic Sp. z o.o. Zielona Góra, Wrocław, Stuttgart <span class="date">Nov 2024 - now</span></p>
+                    <p>Development of temperature, humidity and pressure sensor boards for the wine refrigerators
+                        manufactured by one of the largest European suppliers of household appliances in the world</p>
+                    <ul>
+                        <li>testing firmware according to project requirements</li>
+                        <li>automated tests performance using advanced python-based tools controlling the hardware equipment in the real environment</li>
+                        <li>performing manual tests using communication tools used for internal services of the manufactured equipment</li>
+                        <li>modification of existing and preparation of new test procedures for automated test cases</li>
+                        <li>preparation of test reports and bug fixing process handling</li>
+                    </ul>
+                    <ul>Python, Pytest, Mason, PyCharm, Jira</ul>
                 </div>
-                <div class="project">
-                    <h3>Projekt 2</h3>
-                    <p>Opis projektu, czym się charakteryzował, jakie technologie wykorzystałem.</p>
-                    <button onclick="showDetails('projekt2')">Więcej informacji</button>
-                    <div class="project-details" id="projekt2">
-                        <p>Więcej szczegółów na temat projektu 2...</p>
-                    </div>
+                <div class="job">
+                    <h4>Software Test Engineer</h4>
+                    <p class="company">Globallogic Sp. z o.o., Zielona Góra, Cologne <span class="date">May 2024 - Oct 2024 (6 months)</span></p>
+                    <p> Development of ECU software of Powertrain Control Module (PCM) which is a complex power train ECU
+                        that merges an Engine Controller Unit and a Transmission Controller Unit. The project is led by one of the largest manufacturers
+                        in the automotive industry in USA.</p>
+                    <ul>
+                        <li>performing integration tests of the ECU software components</li>
+                        <li>development of Integration Test Specification</li>
+                        <li>reporting the test results</li>
+                    </ul>
+                    <ul>C, Trace32</ul>
                 </div>
-                <!-- Możesz dodać więcej projektów w podobny sposób -->
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>Kontakt: [Twój email]</p>
-        </div>
-    </footer>
-
+                <div class="job">
+                    <h4>Software Engineer</h4>
+                    <p class="company">Globallogic Sp. z o.o., Zielona Góra, Cologne <span class="date">Jan 2024 - Apr 2024 (4 months)</span></p>
+                    <p>Software development of the fuel tank controller for one of the largest car manufacturer in Germany</p>
+                    <ul>
+                        <li>writing documentation in Doors tool</li>
+                        <li>electrical schematics analysis</li>
+                        <li>implementation of changes</li>
+                        <li>testing changes</li>
+                    </ul>
+                    <ul>C, Enterprise Architect, Tessy</ul>
+                </div>
+            </section>
+            <section>
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>Brandenburgische Technische Universität, Cottbus, Germany</strong>, Power Engineering, Oct 2012 - Mar 2013 (exchange)</li>
+                    <li><strong>University of Zielona Gora, Poland</strong>, Electrical Engineering, March 2012 - July 2013 (MSc Eng)</li>
+                    <li><strong>University of Zielona Gora, Poland</strong>, Electrical Engineering, October 2009 - October 2012 (BSc)</li>
+                    <li><strong>University of Zielona Gora, Poland</strong>, Electrical Engineering, October 2008 - March 2012 (BSc Eng)</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Technical Skills</h3>
+                <ul class="skills">
+                    <li>Embedded C, C++</li>
+                    <li>Python</li>
+                    <li>Automated testing</li>
+                    <li>CAN, LIN</li>
+                    <li>Linux</li>
+                    <li>Git, CI/CD</li>
+                    <li>JIRA, Confluence</li>
+                    <li>PyCharm, Visual Studio Code</li>
+                    <li>ARM, I2C, MODBUS</li>
+                    <li>RS232, RS485, SPI</li>
+                    <li>UART, TTY</li>
+                    <li>RTOS</li>
+                    <li>PCB Design</li>
+                    <li>UI, UX Design</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Projekty</h3>
+                <ul>
+                    <li>
+                        <strong>SmartCar ECU</strong> – rozwój i testowanie firmware’u do sterowników samochodowych (C++, FreeRTOS) <a href="#">[repozytorium]</a>
+                    </li>
+                    <li>
+                        <strong>Test Automation Framework</strong> – framework do automatyzacji testów dla Automotive (Python, pytest) <a href="#">[repozytorium]</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Kontakt</h3>
+                <form id="contactForm">
+                    <label for="name">Imię:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Wyślij</button>
+                    <div id="formResponse"></div>
+                </form>
+            </section>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
