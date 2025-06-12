@@ -210,10 +210,12 @@ form button:hover {
     aside {
         width: 100%;
         min-width: unset;
+        max-width: 100%;
         flex-direction: row;
         align-items: flex-start;
         padding: 20px 10px;
         gap: 20px;
+        box-sizing: border-box;
     }
     aside h1, aside h2, aside p {
         text-align: left;
